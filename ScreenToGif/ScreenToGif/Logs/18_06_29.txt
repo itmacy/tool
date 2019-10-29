@@ -1,0 +1,37 @@
+► Title - 
+	Tried to start the file stream.
+▬ Message - 
+	The process cannot access the file 'C:\Users\Administrator\Desktop\Moxioon\aa.gif' because it is being used by another process.
+○ Type - 
+	System.IO.IOException
+♦ [Version] Date/Hour - 
+	[2.13.3] 06/29/2018 13:35:40
+▲ Source - 
+	mscorlib
+▼ TargetSite - 
+	Void WinIOError(Int32, System.String)
+♠ StackTrace - 
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at ScreenToGif.ImageUtil.Gif.LegacyEncoder.AnimatedGifEncoder.Start(String file)
+
+----------------------------------
+
+► Title - 
+	End of the gif
+▬ Message - 
+	Tried disposing without starting the encoding
+○ Type - 
+	System.Exception
+♦ [Version] Date/Hour - 
+	[2.13.3] 06/29/2018 13:35:40
+▲ Source - 
+	ScreenToGif
+▼ TargetSite - 
+	Void Dispose()
+♠ StackTrace - 
+   at ScreenToGif.ImageUtil.Gif.LegacyEncoder.AnimatedGifEncoder.Dispose()
+
+----------------------------------
+
